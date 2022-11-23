@@ -254,7 +254,7 @@ database = 'mimic4'
 ###################wuren######################################
 param_name=['icustay_id','chart_time','age', 'gender', 'fio2', 'spo2', 'temperature', 'hr', 'rr', 'sbp', 'dbp','mbp','vent_label','mods_label']
 
-comtest_train = pd.read_csv('/home/guanjun/Liu/dabiao_1113.csv',usecols=param_name)[param_name];icustay_id = set(comtest_train.icustay_id)
+comtest_train = pd.read_csv('/home/guanjun/Liu/all_1113.csv',usecols=param_name)[param_name];icustay_id = set(comtest_train.icustay_id)
 scaler = StandardScaler()   #对病例数据进行标准化处理
 
 
